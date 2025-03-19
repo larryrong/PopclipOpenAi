@@ -1,0 +1,32 @@
+{
+  "popclip version": 4069,
+  "identifier": "tw.larry.popclip.extension.chatgpt-grammar-check",
+  "name": "ChatGPT Grammar Check",
+  "icon": "chatgpt-grammar-check.svg",
+  "module": "chatgpt-grammar-check.js",
+  "after": "paste-result",
+  "entitlements": ["network"],
+  "note": "demo",
+  "description": "Correct the spelling, grammar",
+  "options": [
+    {
+      "identifier": "apiToken",
+      "label": "API Token",
+      "type": "string",
+      "description": "Obtain an API Token from Moonshot Settings → API Tokens."
+    },
+    {
+      "identifier": "model",
+      "label": "Model",
+      "type": "multiple",
+      "values": ["gpt-4-turbo","gpt-4","gpt-3.5-turbo"]
+    },
+    {
+      "identifier": "prompt",
+      "label": "Spelling and Grammar Prompt",
+      "type": "string",
+      "defaultValue": "",
+      "description": "Enter the prompt template using {input} as a placeholder for the text"
+    }
+  ]
+}
