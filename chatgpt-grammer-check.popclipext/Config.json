@@ -10,7 +10,7 @@
   "description": "Correct the spelling, grammar",
   "options": [
     {
-      "identifier": "apiToken",
+      "identifier": "apikey",
       "label": "API Token",
       "type": "string",
       "description": "Obtain an API Token from Moonshot Settings → API Tokens."
